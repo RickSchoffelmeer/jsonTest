@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    background: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.markers-box {
+    color: white;
+    font-size: 1.2rem;
+    background: hsl(217, 19%, 38%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25%;
+    min-height: 200px;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+
+}
