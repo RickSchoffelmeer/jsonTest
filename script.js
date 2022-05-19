@@ -1,15 +1,15 @@
 // api url
-const api_url =
+const json_url =
 	"./markers.json";
 
 // Defining async function
-async function getapi(url) {
+async function getapi(json) {
 	
 	// Storing response
-	const response = await fetch(url);
+	const response = await fetch(json);
 	
 	// Storing data in form of JSON
-	var data = await response.json();
+	var data = response;
 	console.log(data);
 	if (response) {
 		hideloader();
@@ -17,7 +17,7 @@ async function getapi(url) {
 	show(data);
 }
 // Calling that async function
-getapi(api_url);
+getapi(json_url);
 
 // Function to hide the loader
 function hideloader() {
