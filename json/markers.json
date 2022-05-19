@@ -1,0 +1,48 @@
+{
+	"events" : [
+		{
+			"name": "NHL-Stenden",
+			"position": {
+				"longitude": 9.96233,
+				"latitude": 49.80404
+			},
+			"category": "School",
+			"sustainable": false,
+			"favourite": true,
+			"description": "Hier vind je NHL-Stenden."
+		},
+		{
+			"name": "Harmonie",
+			"position": {
+				"longitude": 9.96233,
+				"latitude": 49.80404
+			},
+			"category": "Theater",
+			"sustainable": false,
+			"favourite": false,
+			"description": "Hier vind je de Harmonie."
+		},
+		{
+			"name": "Bosk",
+			"position": {
+				"longitude": 9.96233,
+				"latitude": 49.80404
+			},
+			"category": "Cultuur",
+			"sustainable": true,
+			"favourite": true,
+			"description": "Hier vind je Bosk."
+		},
+		{
+			"name": "Fries museum",
+			"position": {
+				"longitude": 9.96233,
+				"latitude": 49.80404
+			},
+			"category": "Cultuur",
+			"sustainable": false,
+			"favourite": true,
+			"description": "Hier vind je het Fries museum."
+		}
+	]
+}
