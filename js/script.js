@@ -12,7 +12,7 @@ async function getData() {
 
 async function renderData() {
     let data = await getData()
-    let el = document.getElementById('data');
+    let el = document.getElementById('markers');
     el.innerHTML = data.events.name;
 }
 
