@@ -1,2 +1,5 @@
 const jsonData = require('./json/markers.json');
-console.log(jsonData);
+var sustainable = JSON.parse(jsonData).filter(function (entry) {
+  return entry.sustainable === 'true';
+});
+console.log(sustainable);
