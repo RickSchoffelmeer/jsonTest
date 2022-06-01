@@ -8,7 +8,7 @@ async function filterData(){
   const queryItem = "Cultuur"
   const result = data.events.filter(a => a.category === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result, null, 2);
+  document.querySelector("#markers").innerText = JSON.stringify(result);
 }
 
 filterData();
