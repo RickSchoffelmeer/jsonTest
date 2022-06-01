@@ -1,3 +1,10 @@
-var jsonData = require('./json/markers.json');
-var sustainable = jsonData.filter( element => element.sustainable == "true")
-console.log(sustainable);
+//function GetData(){
+//  fetch('./json/markers.json')
+//    .then(response => response.json())
+//    .then(data => {
+//      console.log(data.events.name)
+//      document.querySelector("#markers").innerText = data.events.name
+//    })
+//}
+
+//GetData();
