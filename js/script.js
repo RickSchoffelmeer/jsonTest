@@ -1,5 +1,3 @@
-const jsonData = require('./json/markers.json');
-var sustainable = JSON.parse(jsonData).filter(function (entry) {
-  return entry.sustainable === 'true';
-});
+var jsonData = require('./json/markers.json');
+var sustainable = jsonData.filter( element => element.sustainable == "true")
 console.log(sustainable);
