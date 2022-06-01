@@ -14,7 +14,7 @@
 		</div>
   		<script>
 			  fetch('./json/markers.json')
-    			.then(response => response.json())
+    			.then(response => response.text())
     			.then(data => {
       				console.log(data.events[0])
       				document.querySelector("#markers").innerText = data.events[0]
