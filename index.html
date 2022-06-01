@@ -12,16 +12,7 @@
 		  		<p id="markers" class="markers-text">Hier komen namen te staan.</p>
 	  		</div>
 		</div>
-  		<script>
-			  fetch('./json/markers.json')
-    			.then(response => response.json())
-    			.then(data => {
-					data.filter(element => element.category =="Cultuur")
-      				console.log(element)
-					console.log(data)
-      				document.querySelector("#markers").innerText = element
-    			})
-		</script>
+  		<script src="js/script.js"></script>
   	</body>
 </html>
 
