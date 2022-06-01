@@ -1,11 +1,12 @@
 async function getData(){
-  var response = await fetch('./json/markers.json');
+  const response = await fetch('./json/markers.json');
   return response.json();
 }
 
 async function filterData(){
-  var data = await getData();
-  var result = data.filter(a => a.category === "Cultuur");
+  const data = await getData();
+  const queryItem = "Cultuur"
+  const result = data.events.filter(a => a.category === queryItem);
   console.log(result);
   document.querySelector("#markers").innerText = result
 }
