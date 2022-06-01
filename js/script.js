@@ -5,7 +5,7 @@ async function getData(){
 
 async function filterData(){
   var data = await getData();
-  var result = data.filter(a => a.category == "Cultuur");
+  var result = data.filter(a => a.category === "Cultuur");
   console.log(result);
   document.querySelector("#markers").innerText = result
 }
