@@ -1,10 +1,12 @@
-//function GetData(){
-//  fetch('./json/markers.json')
-//    .then(response => response.json())
-//    .then(data => {
-//      console.log(data.events.name)
-//      document.querySelector("#markers").innerText = data.events.name
-//    })
-//}
+function GetData(){
+  fetch('./json/markers.json')
+    			.then(response => response.json())
+    			.then(data => {
+            const result = data.filter(({category}) => category === "Cultuur")
+					  console.log(result)
+      			document.querySelector("#markers").innerText = result
+    			})
+}
 
-//GetData();
+
+GetData();
