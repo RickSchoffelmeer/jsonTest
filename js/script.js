@@ -13,8 +13,8 @@ async function filterData(){
   document.querySelector("#markers").innerText = JSON.stringify(result);
 }
 
-function clickFunction(element){
-  element.style.display = "none";
-  document.querySelectorAll(".markers-box").style.display = "block";
+function clickFunction(){
+  document.getElementsByClassName("slide-one").style.display = "none";
+  document.getElementsByClassName("markers-box").style.display = "block";
   filterData();
 }
