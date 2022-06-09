@@ -11,7 +11,6 @@ async function filterDataCat(catName){
   queryItem = catName;
   var result = data.events.filter(a => a.category === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result);
   data = result;
 }
 
@@ -28,7 +27,7 @@ async function filterDataPers(persName){
 }
 
 function clickFunction(elName, catName){
-  if(elName == "side-one"){
+  if(elName === "slide-one"){
     const elements = document.getElementsByClassName(elName);
     console.log(elements);
     elements[0].style.display = 'none';
@@ -38,7 +37,7 @@ function clickFunction(elName, catName){
     elementTwo[0].style.display = 'block';
   }
 
-  if(elName == "side-two"){
+  if(elName === "slide-two"){
       const elements = document.getElementsByClassName(elName);
       console.log(elements);
       elements[0].style.display = 'none';
