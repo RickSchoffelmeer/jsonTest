@@ -20,7 +20,7 @@ async function filterDataPers(catName){
   elements[0].style.display = 'block';
 
   queryItem = catName;
-  var result = data.filter(a => a.person === queryItem);
+  var result = data.filter(a => a.person.includes(queryItem));
   console.log(result);
   const myJSON = JSON.stringify(result);
   document.getElementById("markers").innerHTML = myJSON;

@@ -7,7 +7,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Actief",
-			"person": "Volwassen",
+			"person": ["Volwassen"],
 			"description": "Hier vind je NHL-Stenden."
 		},
 		{
@@ -27,7 +27,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Natuur",
-			"person": "Kind",
+			"person": ["Kind"],
 			"description": "Hier vind je Bosk."
 		},
 		{
@@ -37,7 +37,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Cultuur",
-			"person": ["Volwassen", "Kind", "Senior"],
+			"person": ["Senior"],
 			"description": "Hier vind je het Fries museum."
 		}
 	]
