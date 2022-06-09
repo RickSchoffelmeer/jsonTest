@@ -22,7 +22,8 @@ async function filterDataPers(catName){
   queryItem = catName;
   var result = data.filter(a => a.person === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result.description);
+  const myJSON = JSON.stringify(result);
+  document.getElementById("markers").innerHTML = myJSON;
   data = result;
 }
 
