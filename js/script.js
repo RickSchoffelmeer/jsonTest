@@ -20,9 +20,9 @@ async function filterDataPers(catName){
   elements[0].style.display = 'block';
 
   queryItem = catName;
-  var result = data.events.filter(a => a.person === queryItem);
+  var result = data.filter(a => a.person === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result.events.description);
+  document.querySelector("#markers").innerText = JSON.stringify(result.description);
   data = result;
 }
 
