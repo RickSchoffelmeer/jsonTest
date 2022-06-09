@@ -14,7 +14,6 @@ async function filterData(){
 }
 
 function clickFunction(){
-  document.getElementsByClassName("slide-one").style.display = "none";
-  document.getElementsByClassName("markers-box").style.display = "block";
-  filterData();
+  const elements = document.getElementsByClassName('slide-one');
+  console.log(elements);
 }
