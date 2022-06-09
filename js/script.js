@@ -5,16 +5,20 @@ async function getData(){
   return response.json();
 }
 
-async function filterData(){
+async function filterData(catName){
+  const elements = document.getElementsByClassName('markers-box');
+  console.log(elements);
+  elements[0].style.display = 'block';
   var data = await getData();
-  queryItem = "Cultuur"
+  queryItem = catName;
   var result = data.events.filter(a => a.category === queryItem);
   console.log(result);
   document.querySelector("#markers").innerText = JSON.stringify(result);
 }
 
-function clickFunction(){
-  const elements = document.getElementsByClassName('slide-one');
+function clickFunction(elName, catName){
+  const elements = document.getElementsByClassName(elName);
   console.log(elements);
   elements[0].style.display = 'none';
+  filterData(catName);
 }

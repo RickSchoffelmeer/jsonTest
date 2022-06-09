@@ -6,7 +6,7 @@
 				"longitude": 9.96233,
 				"latitude": 49.80404
 			},
-			"category": "School",
+			"category": "Actief",
 			"sustainable": false,
 			"favourite": true,
 			"description": "Hier vind je NHL-Stenden."
@@ -17,7 +17,7 @@
 				"longitude": 9.96233,
 				"latitude": 49.80404
 			},
-			"category": "Theater",
+			"category": "Cultuur",
 			"sustainable": false,
 			"favourite": false,
 			"description": "Hier vind je de Harmonie."
@@ -28,7 +28,7 @@
 				"longitude": 9.96233,
 				"latitude": 49.80404
 			},
-			"category": "Cultuur",
+			"category": "Natuur",
 			"sustainable": true,
 			"favourite": true,
 			"description": "Hier vind je Bosk."
