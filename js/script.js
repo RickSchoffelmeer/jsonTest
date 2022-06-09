@@ -16,4 +16,5 @@ async function filterData(){
 function clickFunction(){
   const elements = document.getElementsByClassName('slide-one');
   console.log(elements);
+  elements[0].style.display = 'none';
 }
