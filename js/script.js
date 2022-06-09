@@ -22,7 +22,7 @@ async function filterDataPers(catName){
   queryItem = catName;
   var result = data.events.filter(a => a.person === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result);
+  document.querySelector("#markers").innerText = JSON.stringify(result.description);
   data = result;
 }
 
@@ -31,6 +31,8 @@ function clickFunction(elName, catName){
     const elements = document.getElementsByClassName(elName);
     console.log(elements);
     elements[0].style.display = 'none';
+
+    filterDataCat(catName);
     
     const elementTwo = document.getElementsByClassName('slide-two');
     console.log(elementTwo);
@@ -38,10 +40,10 @@ function clickFunction(elName, catName){
   }
 
   if(elName === "slide-two"){
-      const elements = document.getElementsByClassName(elName);
-      console.log(elements);
-      elements[0].style.display = 'none';
+    const elements = document.getElementsByClassName(elName);
+    console.log(elements);
+    elements[0].style.display = 'none';
     
-      filterDataPers(catName);
+    filterDataPers(catName);
   }
 }
