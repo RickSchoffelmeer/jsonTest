@@ -14,12 +14,12 @@ async function filterDataCat(catName){
   data = result;
 }
 
-async function filterDataPers(persName){
+async function filterDataPers(catName){
   const elements = document.getElementsByClassName('markers-box');
   console.log(elements);
   elements[0].style.display = 'block';
   data = await getData();
-  queryItem = persName;
+  queryItem = catName;
   var result = data.events.filter(a => a.person === queryItem);
   console.log(result);
   document.querySelector("#markers").innerText = JSON.stringify(result);
@@ -42,6 +42,6 @@ function clickFunction(elName, catName){
       console.log(elements);
       elements[0].style.display = 'none';
     
-      filterDataPers(persName);
+      filterDataPers(catName);
   }
 }
