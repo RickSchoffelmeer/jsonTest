@@ -14,7 +14,7 @@ async function filterData(){
 }
 
 function clickFunction(element){
-  element.style.display = 'none';
-  document.querySelectorAll(".markers-box").style.display = 'flex';
+  element.style.display = "none";
+  document.querySelectorAll(".markers-box").style.display = "block";
   filterData();
 }
