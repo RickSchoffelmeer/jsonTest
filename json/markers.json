@@ -7,8 +7,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Actief",
-			"sustainable": false,
-			"favourite": true,
+			"person": "Volwassen",
 			"description": "Hier vind je NHL-Stenden."
 		},
 		{
@@ -18,8 +17,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Cultuur",
-			"sustainable": false,
-			"favourite": false,
+			"person": ["Volwassen", "Kind", "Senior"],
 			"description": "Hier vind je de Harmonie."
 		},
 		{
@@ -29,8 +27,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Natuur",
-			"sustainable": true,
-			"favourite": true,
+			"person": "Kind",
 			"description": "Hier vind je Bosk."
 		},
 		{
@@ -40,8 +37,7 @@
 				"latitude": 49.80404
 			},
 			"category": "Cultuur",
-			"sustainable": false,
-			"favourite": true,
+			"person": ["Volwassen", "Kind", "Senior"],
 			"description": "Hier vind je het Fries museum."
 		}
 	]
