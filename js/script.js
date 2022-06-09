@@ -18,7 +18,7 @@ async function filterDataPers(catName){
   const elements = document.getElementsByClassName('markers-box');
   console.log(elements);
   elements[0].style.display = 'block';
-  data = await getData();
+  
   queryItem = catName;
   var result = data.events.filter(a => a.person === queryItem);
   console.log(result);
