@@ -1,5 +1,6 @@
 var queryItem;
 var data;
+var display;
 
 async function getData(){
   const response = await fetch('./json/markers.json');
@@ -22,8 +23,11 @@ async function filterDataPers(catName){
   queryItem = catName;
   var result = data.filter(a => a.person.includes(queryItem));
   console.log(result);
-  const myJSON = JSON.stringify(result);
-  document.getElementById("markers").innerHTML = myJSON;
+  result.forEach(element => {
+    const myJSON = JSON.stringify(element.name);
+    display.push(myJSON);
+  });
+  document.getElementById("markers").innerHTML = display + ",";
   data = result;
 }
 
