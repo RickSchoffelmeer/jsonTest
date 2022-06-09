@@ -18,11 +18,11 @@ async function filterDataPers(catName){
   const elements = document.getElementsByClassName('markers-box');
   console.log(elements);
   elements[0].style.display = 'block';
-  
+
   queryItem = catName;
   var result = data.events.filter(a => a.person === queryItem);
   console.log(result);
-  document.querySelector("#markers").innerText = JSON.stringify(result.description);
+  document.querySelector("#markers").innerText = JSON.stringify(result.events.description);
   data = result;
 }
 
