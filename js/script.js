@@ -1,6 +1,6 @@
 var queryItem;
 var data;
-var display;
+var display = [];
 
 async function getData(){
   const response = await fetch('./json/markers.json');
