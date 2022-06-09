@@ -13,7 +13,7 @@ async function filterData(){
   document.querySelector("#markers").innerText = JSON.stringify(result);
 }
 
-async function clickFunction(element){
+function clickFunction(element){
   element.style.display = 'none';
   document.querySelectorAll(".markers-box").style.display = 'inline-block';
   filterData();
