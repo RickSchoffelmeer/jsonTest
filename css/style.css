@@ -71,7 +71,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  margin: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   min-height: 60px;
   min-width: 0;
   outline: none;
